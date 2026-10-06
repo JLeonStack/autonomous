@@ -18,6 +18,10 @@ describe("wordCount", () => {
     expect(wordCount("a\tb\nc\r\nd")).toBe(4);
   });
 
+  test("treats a non-breaking space as a separator", () => {
+    expect(wordCount("a b c")).toBe(3);
+  });
+
   test("returns 0 for an empty string", () => {
     expect(wordCount("")).toBe(0);
   });
