@@ -13,5 +13,5 @@ wordCount("  hello   world  "); // -> 2
 Run the tests from the repository root:
 
 ```sh
-bun test
+npm install && npm run test
 ```
