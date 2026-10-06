@@ -4,5 +4,8 @@
   "type": "module",
   "scripts": {
     "test": "bun test"
+  },
+  "devDependencies": {
+    "bun": "^1.4.2"
   }
 }
