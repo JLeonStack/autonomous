@@ -1,4 +1,7 @@
 version: 1
 environment:
   setup:
-    - bun
+    - npm ci
+verify:
+  install: npm ci
+  test: npm test
