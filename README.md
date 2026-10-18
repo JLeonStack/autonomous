@@ -21,6 +21,18 @@ Expect HTTP 200, `Content-Type: application/json`, and:
 {"message":"Hello Hono!"}
 ```
 
+The goodbye endpoint is available at `GET /goodbye`:
+
+```sh
+curl --fail --include http://localhost:3000/goodbye
+```
+
+It returns HTTP 200, `Content-Type: application/json`, and:
+
+```json
+{"message":"Goodbye!"}
+```
+
 Run with automatic restarts during development:
 
 ```sh

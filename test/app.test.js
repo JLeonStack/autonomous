@@ -9,3 +9,11 @@ test('GET / returns the greeting as JSON', async () => {
   assert.match(response.headers.get('content-type'), /^application\/json\b/);
   assert.deepEqual(await response.json(), { message: 'Hello Hono!' });
 });
+
+test('GET /goodbye returns the goodbye message as JSON', async () => {
+  const response = await app.request('/goodbye');
+
+  assert.equal(response.status, 200);
+  assert.match(response.headers.get('content-type'), /^application\/json\b/);
+  assert.deepEqual(await response.json(), { message: 'Goodbye!' });
+});
