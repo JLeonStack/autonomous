@@ -1,0 +1,7 @@
+version: 1
+environment:
+  setup:
+    - npm ci
+verify:
+  install: npm ci
+  test: npm test
